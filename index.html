@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.parent{
+			width: 400px;
+			height: 600px;
+			background-color: white;
+			position: relative;
+			transform-style: preserve-3d;
+			margin: auto;
+			backface-visibility: hidden;
+
+		}
+		.child1
+		{
+			width: 300px;
+			height: 550px;
+			background-color: white;
+			position: absolute;
+			box-shadow: 1px 1px 5px black;
+		    margin-left: 50px;
+		    margin-top: 25px;
+		    transform: translateZ(200px);
+		    border: 2px solid black;
+		    border-radius: 10px;
+		    opacity: 0.5;
+
+		}
+		.child2{
+			width: 300px;
+			height: 550px;
+			background-color: white;
+			position: absolute;
+			box-shadow: 1px 1px 1px black;
+			text-shadow: 1px 1px 1px black;
+		    margin-left: 50px;
+		    margin-top: 25px;
+		    transform: translateZ(-200px) rotateY(180deg);
+		    border: 2px solid blak;
+		    border-radius: 10px;
+		    opacity: ;
+		}
+		.child3
+		{
+			width: 300px;
+			height: 550px;
+			background-color: white;
+			position: absolute;
+			box-shadow: 1px 1px 2px black;
+		    margin-left: 50px;
+		    margin-top: 25px;
+		    transform: translateZ(100px);
+		    border: 2px solid ;
+		    border-radius: 10px;
+		    opacity: 0.1;
+
+		}
+		.parent:hover{
+			transform: rotateY(180deg);
+			transition-duration: 0.3s;
+		}
+		
+		.input1{
+			text-align: center;
+			
+			
+		}
+		.input2{
+			text-align: center;}
+
+		.button{
+			width: 80px;
+			height: 25px;
+			background-color: white;
+			color: white;
+			text-shadow: 1px 1px 1px black;
+			box-shadow: 1px 1px 1px black;
+			border: 2px solid white;
+			border-radius: 10px;
+
+
+		}
+		input{
+			background-color: white;
+			height: 30px;
+			border: 2px solid white;
+			box-shadow: 1px 1px 3px black;
+			margin-top: 20px;
+			border-radius: 10px;
+			color: white;
+		}
+		::placeholder{
+			color: black;
+			text-align: center;
+			text-shadow: 1px 1px 1px blk
+
+		}
+		.button{
+			width: 150px;
+			height: 25px;
+			background-color: white;
+			color: white;
+			text-shadow: 1px 1px 1px black;
+			box-shadow: 1px 1px 1px black;
+			border: 2px solid white;
+			border-radius: 10px;
+			margin-top: 20px;
+
+
+		}
+		
+		
+		
+	</style>
+</head>
+<body>
+	<div class="parent">
+		
+		
+
+		
+		
+		
+		<div class="child1">
+			<form>
+				<div class= "input1"><input type="text" name="name" placeholder="Enter Username"></div><br>
+				<div class= "input1"><input type="text" name="name" placeholder="Enter Email"></div><br>
+				<div class= "input1"><input type="text" name="name" placeholder="Enter Password"></div><br>
+				<div class= "input1"><input type="text" name="name" placeholder="Confirm Password"></div><br>
+				<div class= "input1"><button class="button">Sign up</button></div>
+			</form>
+		</div>
+		<div class="child2">
+			<form>
+				<div class= "input1"><input type="Email" name="name" placeholder="Enter Email"></div><br>
+				<div class= "input1"><input type="Password" name="name" placeholder="Enter Password"></div><br>
+				<div class= "input1"><button class="button">Submit</button></div>
+				<div class= "input1"><button class="button">Forgot Password</button></div>
+				<div class= "input1"><button class="button">Sign up Page</button></div>
+			</form>
+		</div>
+		<div class="child3">
+			<form>
+				<div class= "input2"><input type="Email" name="name" placeholder="Enter Email"></div><br>
+				<div class= "input2"><button class="button">Submit</button></div>
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>
